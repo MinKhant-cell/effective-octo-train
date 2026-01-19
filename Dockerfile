@@ -3,6 +3,7 @@ FROM golang:1.25.5-alpine
 WORKDIR /app
 
 COPY go.mod go.sum ./
+RUN go version
 RUN go mod download
 
 COPY . .
