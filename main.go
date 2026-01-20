@@ -20,7 +20,7 @@ func main() {
 
 	// Root route
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello, welcome to my store!")
+		c.String(http.StatusOK, "Hello, Welcome to My Store!")
 	})
 
 	// Products route
